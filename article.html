@@ -4,28 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khapu Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/5ce2613b57.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
-<body>
-     <header>
- <!-- navbar -->
-            <nav class=" fixed top-0 w-full flex justify-between items-center px-8 py-4  text-sky bg-white opacity-50 shadow-2xl">
+<body> 
 
-                <!-- logo -->
-             <div class=" flex items-center space-x-3">
-                <img src="images\Screenshot_2025-01-31_154431-removebg-preview.png" alt="logo" class="h-12 w-auto m-0 p-0">
-                <span class="text-3xl font-semibold font-playfair">KHAPU</span>
+  <header>
+    <!-- navbar -->
+    <nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 text-sky bg-white opacity-50 shadow-2xl">
+   
+      <!-- logo -->
+      <div class="flex items-center space-x-3">
+        <img src="images\Screenshot_2025-01-31_154431-removebg-preview.png" alt="logo" class="h-12 w-auto m-0 p-0">
+        <span class="text-3xl font-semibold">KHAPU</span>
+      </div>
+   
+      <!-- rest of navbar -->
+      <ul class="cursor-pointer text-sky text-xl md:flex space-x-6 ">
+        <li><a href="home.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+        <li><a href="article.html" class="hover:text-gray-400">Article</a></li>
+        <li><a href="gallery.html" class="hover:text-gray-400">Gallery</a></li>
+        <li><a href="accolades.html" class="hover:text-gray-400">Accolades</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+     
+     <section>
+        <div class=" bg-white shadow-xl rounded-lg p-6 text-center hover:shadow-2xl transition duration-300 font-playfair bg-gray-300 py-10">
+            <!-- Article Section -->
+            <div class="text-center mt-30 mb-10">
+              <h2 class="text-gold font-semibold text-lg">Welcome to Your Weekly Dose of Style</h2>
+              <h1 class="text-4xl font-bold text-gray-800 mt-2">Nairobi Fashion Week!!💃🏽
+              </h1>
+              <p class="text-black font-semibold mt-4 max-w-2xl mx-auto">
+                The year has started of on a high note with the NAIROBI FASHION WEEK 2025 bringing together talented designers from all over the continent.
+                Trust to keep you in the loop with all the stunning appearances as well as the events highlights. </p>    
+        </div>
+        
+        <div class="flex items-center justify-center space-x-8 p-10">
+            <div class="w-1/5">
+                <img src="images\nnnffw2.jpg" alt="nfwposter" class=" flex items-center justify-center w1/1">
             </div>
+        </section>
 
-             <!-- rest of navbar -->
-                <ul class="cursor-pointer text-sky text-xl font-playfair md:flex space-x-6 ">
-                  <li><a href="home.html" class="hover:text-gray-400">Home</a></li>
-                  <li><a href="about.html" class="hover:text-gray-400">About</a></li>
-                  <li><a href="article.html" class="hover:text-gray-400">Article</a></li>
-                  <li><a href="gallery.html" class="hover:text-gray-400">Gallery</a></li>
-                  <li><a href="accolades.html" class="hover:text-gray-400">Accolades</a></li>
-                </ul>
-            </nav>
-     </header>
+    <section>
+        <div class="flex items-left justify-left space-x-8 p-10 bg-gray-100">
+            <div class="w-1/5">
+                <video autoplay muted loop class="w-full h-auto object-cover shadow-2xl rounded-md">
+                  <source src="images\nfw2.mp4" type="video/mp4">
+                </video>
+    </section>          
+       
+
